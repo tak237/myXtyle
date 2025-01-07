@@ -1,0 +1,91 @@
+/* Active thumbnail border */
+.info-product .active {
+    border: 2px solid #000; /* Solid black border for active thumbnail */
+}
+
+/* Zoom effect animation */
+@keyframes zoom-img {
+    0% {
+        transform: scale(1);
+    }
+    10%, 100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Thumbnail images default opacity */
+.demo {
+    opacity: 0.6;
+}
+
+/* Make active and hovered thumbnails fully visible */
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* Apply zoom effect when hovering over main images */
+.zoom_04:hover {
+    animation: zoom-img 1s infinite; /* Apply zoom-in and zoom-out effect */
+}
+
+
+ul {
+    position: absolute;
+    display: flex;
+    justify-content: space-around; /* Canh đều các nút */
+    align-items: center;
+    bottom: 10px; /* Cách đáy của hình ảnh 10px */
+    width: 100%; /* Chiều rộng bằng với hình ảnh */
+    opacity: 0; /* Ẩn ban đầu */
+    transition: opacity 0.5s ease;
+  
+    li {
+      list-style: none; /* Xóa bullet point */
+  
+      &:nth-child(1),
+      &:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mauden; /* Màu nền đen */
+        border-radius: 50%; /* Bo tròn */
+        transition: background-color 0.3s ease;
+  
+        a {
+          color: $mautrang; /* Màu trắng */
+          font-size: 16px;
+  
+          &:hover {
+            color: $mauvang; /* Màu vàng khi hover */
+          }
+        }
+      }
+  
+      &:nth-child(2) {
+        button {
+          border: none;
+          background-color: $mauden; /* Màu nền đen */
+          color: $mautrang; /* Màu chữ trắng */
+          text-transform: uppercase;
+          padding: 8px 20px; /* Dài hơn so với các nút khác */
+          font-size: 14px;
+          border-radius: 20px; /* Bo góc nhẹ */
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease;
+  
+          &:hover {
+            background-color: $mauvang; /* Màu nền vàng khi hover */
+            color: $mauden; /* Chữ đen */
+          }
+        }
+      }
+    }
+  }
+  
+  /* Hiển thị các nút khi hover vào hình ảnh */
+  .pr-img:hover ul {
+    opacity: 1; /* Hiển thị đầy đủ */
+  }
