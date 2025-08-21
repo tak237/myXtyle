@@ -1872,4 +1872,14 @@ footer .visiting .visiting-day .visiting-hour {
   border: none;
   margin-top: 10px;
   line-height: 30px;
+}
+
+#backToTop {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#backToTop.show {
+  display: block !important;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -278,15 +279,15 @@
                         <div class="line"></div>
                     <li><i class="fa-regular fa-comments"></i><span>0 Comments</span></li>
                 </ul>
-                <img src="images/Blog-detail/blog-post-1.jpg" alt="" class="w-100">
+                <img src="images/Blog-detail/blog-post-1.jpg" alt="" class="w-100 gsap-slide-in-up">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar turpis nec commodo sodales. Proin vel quam nisi. Vestibulum efficitur pharetra urna quis congue. Curabitur sollicitudin odio nibh, vitae semper felis ornare eget. In hac habitasse platea dictumst. Nunc consectetur urna pellentesque arcu dictum fermentum. Nulla interdum vehicula velit, ut luctus dolor hendrerit nec. Vivamus pharetra quam id ante cursus, sit amet mollis justo luctus. Aliquam vel lectus id ante lacinia elementum in eget eros. Duis vel posuere libero, nec iaculis turpis. Quisque nec rhoncus massa, sed viverra ante. Aliquam ante odio, sollicitudin id tempor eu, convallis lacinia nunc. SectionAenean tincidunt metus eros, eu ornare risus efficitur quis. Praesent viverra elit sed mauris dictum volutpat. Nam id diam risus. Maecenas consequat accumsan felis. Proin erat augue, egestas ac mauris et, tincidunt blandit mi</p>
                 <h4>"If you’re #skincaregoals include a younger-looking, glowing complexion, it all starts with collagen. Collagen is one of your body’s major building blocks: it’s a protein and critical to keeping your skin structure strong</h4>
                 <p>With this potential discomfort in mind, Aloisia Beauty has developed a highly effective serum that leads to the same visibly noticeable benefits without the Vitamin C: Our renew Concentrated Serum. But don’t just take it from us: According to a third-party, independent evaluation of 32 consumers, 86% reported that their skin looks plumper and brighter and 97% reported brighter.</p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 gsap-slide-in-left">
                         <img src="images/Blog-detail/blog-detail-1.jpg" alt="" class="w-100">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 gsap-slide-in-right">
                         <img src="images/Blog-detail/blog-detail-2.jpg" alt="" class="w-100">
                     </div>
                 </div>
@@ -578,6 +579,11 @@
           </div>
         </div>
       </div>
+      <button id="backToTop" class="btn btn-dark rounded-circle position-fixed" 
+        style="bottom: 40px; right: 30px; display: none; z-index: 999;" 
+        title="Lên đầu trang">
+  <i class="fa-solid fa-arrow-up"></i> <!-- Nếu bạn dùng Bootstrap Icons -->
+</button>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
   const modal = new bootstrap.Modal(document.getElementById('newsletterModal'));
@@ -586,10 +592,14 @@
   }, 1000);
 });
       </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script   script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/animation.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

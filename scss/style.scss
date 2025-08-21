@@ -155,6 +155,7 @@ a
 
 .header
 {
+    
     .logo
     {
         line-height: 85px;
@@ -2560,4 +2561,13 @@ footer
     border: none;
     margin-top: 10px;
     line-height: 30px;
+}
+
+#backToTop {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#backToTop.show {
+  display: block !important;
+  opacity: 1;
 }
